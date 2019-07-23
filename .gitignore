@@ -234,4 +234,8 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 
+*.zip
+
+**/output
+
 

@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "deployments": {
+        "aspNetCoreWeb": [
+            {
+                "name": "react-dotnetcore",
+                "parameters": {
+                    "appBundle": "output.zip",
+                    "iisPath": "/",
+                    "iisWebSite": "Default Web Site"
+                }
+            }
+        ]
+    }
+}
