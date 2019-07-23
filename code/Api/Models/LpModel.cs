@@ -1,5 +1,5 @@
-using System;
 using CsvHelper.Configuration.Attributes;
+using Api.Controllers;
 
 namespace Api.Models
 {
@@ -12,8 +12,8 @@ namespace Api.Models
     [Name("Plant Code")]
     public string PlantCode { get; set; }
     [Name("Date/Time")]
-    public DateTime DateTime { get; set; }
-    public string FormattedDate => DateTime.ToString("ddMMyyyy");
+    public string DateTime { get; set; }
+    public string FormattedDate => Helper.FormatDateTime(DateTime);
 
     [Name("Data Type")]
     public string DataType { get; set; }

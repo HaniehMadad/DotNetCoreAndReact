@@ -1,4 +1,4 @@
-using System;
+using Api.Controllers;
 
 namespace Api.Models
 {
@@ -7,8 +7,8 @@ namespace Api.Models
     public int MeterCode { get; set; }
     public int Serial { get; set; }
     public string PlantCode { get; set; }
-    public DateTime DateTime { get; set; }
-    public string FormattedDate => DateTime.ToString("ddMMyyyy");
+    public string DateTime { get; set; }
+    public string FormattedDate => Helper.FormatDateTime(DateTime);
     public string Quality { get; set; }
     public string Stream { get; set; }
     public string DataType { get; set; }
